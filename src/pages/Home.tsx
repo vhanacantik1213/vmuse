@@ -28,7 +28,7 @@ const Home = () => {
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-xl">
                   Let's find what works best for your skin, 
-                  <span className="block font-medium text-foreground">
+                  <span className="block font-medium text-primary">
                     one honest review at a time.
                   </span>
                 </p>
