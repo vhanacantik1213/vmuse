@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Search, Filter, Heart, TrendingUp, Award, Camera } from "lucide-react";
-import PhotoUpload from "@/components/PhotoUpload";
+import reviewPhoto from "@/assets/review-photo.jpg";
 
 const Review = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -188,10 +188,10 @@ const Review = () => {
             {filteredReviews.filter(review => review.featured).map((review) => (
               <Card key={review.id} className="overflow-hidden border-2 border-primary/20 bg-gradient-to-br from-card via-card to-primary/5">
                 <div className="relative">
-                  <PhotoUpload 
-                    className="h-48"
-                    placeholder="Add product image"
-                    defaultIcon={<Camera className="h-8 w-8 text-primary" />}
+                  <img 
+                    src={reviewPhoto}
+                    alt="Beauty product review"
+                    className="h-48 w-full object-cover"
                   />
                   {review.trending && (
                     <Badge className="absolute top-2 right-2 bg-coral text-coral-foreground">
@@ -247,10 +247,10 @@ const Review = () => {
             {filteredReviews.map((review) => (
               <Card key={review.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative">
-                  <PhotoUpload 
-                    className="h-40"
-                    placeholder="Add product image"
-                    defaultIcon={<Camera className="h-6 w-6 text-primary" />}
+                  <img 
+                    src={reviewPhoto}
+                    alt="Beauty product review"
+                    className="h-40 w-full object-cover"
                   />
                   {review.trending && (
                     <Badge className="absolute top-2 right-2 bg-coral text-coral-foreground text-xs">
