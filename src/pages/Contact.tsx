@@ -136,7 +136,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">hello@vmuse.com</p>
+                    <p className="text-muted-foreground">vmuse@gmail.com</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       I typically respond within 24-48 hours
                     </p>
@@ -149,7 +149,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Social Media</h3>
-                    <p className="text-muted-foreground">@vmuse_beauty</p>
+                    <p className="text-muted-foreground">@vmuse.id</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Follow for daily beauty tips and updates
                     </p>

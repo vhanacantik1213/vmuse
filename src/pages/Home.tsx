@@ -16,24 +16,24 @@ const Home = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-transparent"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-                  Hey, gorgeous! 
-                  <span className="block text-primary">Welcome to Vmuse</span>
+                  Hi, gorgeous!
+                  <span className="block text-primary">Welcome to vmuse</span>
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-xl">
-                  Let's find what works best for your skin, 
+                  Let's find what works best for your skin,
                   <span className="block font-medium text-primary">
                     one honest review at a time.
                   </span>
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-coral hover:bg-coral/90 text-coral-foreground">
                   Start Exploring
@@ -42,22 +42,6 @@ const Home = () => {
                 <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
                   Latest Reviews
                 </Button>
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">200+</div>
-                  <div className="text-sm text-muted-foreground">Products Reviewed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50K+</div>
-                  <div className="text-sm text-muted-foreground">Beauty Lovers</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">5★</div>
-                  <div className="text-sm text-muted-foreground">Trusted Reviews</div>
-                </div>
               </div>
             </div>
 

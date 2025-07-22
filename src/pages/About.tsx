@@ -1,5 +1,5 @@
 import { Heart, Award, Users, Clock } from "lucide-react";
-import personalPhoto from "@/assets/about-personal-photo.jpg";
+
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
             <div className="relative">
               <div className="relative z-10 bg-card rounded-3xl p-8 shadow-2xl border border-border">
                 <img 
-                  src={personalPhoto}
+                  src="/v.jpg"
                   alt="Beauty blogger portrait"
                   className="w-full h-96 object-cover rounded-2xl"
                 />
@@ -20,35 +20,37 @@ const About = () => {
               <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-coral/20 to-accent/20 rounded-full blur-3xl"></div>
             </div>
 
-            {/* About Content */}
-            <div className="space-y-8">
+           {/* About Content */}
+           <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
                   Hi, I'm 
-                  <span className="block text-primary">Your Beauty Guide</span>
+                  <span className="block text-primary">Ivhana Julia Andila</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Welcome to my little corner of the beauty world! I'm passionate about helping you discover products that truly work for your unique skin.
+                I created this space out of a simple truth: finding the right skincare or makeup isn’t always easy, especially with so many products and so little honest feedback out there.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <p className="text-foreground leading-relaxed">
-                  My journey with skincare and makeup started when I struggled to find honest reviews that matched my experience. That's when I decided to create a space where authenticity meets beauty.
+                That’s where vmuse comes in.
+                Here, I share real reviews, personal routines, and helpful beauty tips based on experience, not just hype. Whether you're struggling with oily skin, searching for the perfect lipstick, or simply curious about what works, I’m here to be your guide and your beauty muse.
                 </p>
                 <p className="text-foreground leading-relaxed">
-                  Every review you'll find here comes from personal testing, research, and genuine care for your skin's health. I believe beauty should enhance who you are, not change you.
+                So, welcome! I hope this blog feels like your cozy space to learn, explore, and celebrate your glow. 
+                Let’s glow together!
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <div className="text-2xl font-bold text-primary">3+</div>
+                  <div className="text-2xl font-bold text-primary">2+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <div className="text-2xl font-bold text-primary">500+</div>
+                  <div className="text-2xl font-bold text-primary">200+</div>
                   <div className="text-sm text-muted-foreground">Products Tested</div>
                 </div>
               </div>

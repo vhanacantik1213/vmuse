@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, Search, Filter, Heart, TrendingUp, Award, Camera } from "lucide-react";
-import reviewPhoto from "@/assets/review-photo.jpg";
+import { Star, Search, Filter, Heart, TrendingUp, Award } from "lucide-react";
 
 const Review = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,79 +20,79 @@ const Review = () => {
   const reviews = [
     {
       id: 1,
-      title: "The Ordinary Niacinamide 10% + Zinc 1%",
+      title: "Hada Labo Gokujyun Moisturizer",
       category: "skincare",
       rating: 4.5,
-      price: "$7.90",
-      image: "/api/placeholder/300/300",
-      excerpt: "A budget-friendly serum that actually works for oil control and pore refinement...",
-      pros: ["Affordable", "Effective for oily skin", "Minimal ingredients"],
-      cons: ["Can pill under makeup", "Strong for sensitive skin"],
+      price: "Rp.56.000,00",
+      image: "/id1.png",
+      excerpt: "A lightweight moisturizer that deeply hydrates the skin and restores moisture balance without feeling greasy...",
+      pros: ["Fragrance-free", "Good for sensitive skin", "Deep hydration", "Lightweight texture"],
+      cons: ["Might not be hydrating enough for very dry skin", "Not ideal under heavy makeup"],
       featured: true,
       trending: false
     },
     {
       id: 2,
-      title: "Rare Beauty Soft Pinch Liquid Blush",
+      title: "Wonder Crush Serum Liquid Blush - Spring Fling",
       category: "makeup",
       rating: 5.0,
-      price: "$23.00",
-      image: "/api/placeholder/300/300",
-      excerpt: "The perfect liquid blush that gives the most natural flush and lasts all day...",
-      pros: ["Long-lasting", "Natural finish", "Buildable"],
-      cons: ["Expensive", "Hard to blend if you use too much"],
+      price: "Rp.99.000,00",
+      image: "/id2.png",
+      excerpt: "A dewy liquid blush that blends seamlessly into the skin, giving a natural flush with a radiant glow...",
+      pros: ["Buildable color", "Blends easily", "Hydrating serum formula", "Fresh dewy finish"],
+      cons: ["May fade faster on oily skin", "Not transfer-proof"],
       featured: false,
       trending: true
     },
     {
       id: 3,
-      title: "CeraVe Hydrating Facial Cleanser",
+      title: "Hada Labo Gokujyun Face Wash",
       category: "skincare",
       rating: 4.8,
-      price: "$16.99",
-      image: "/api/placeholder/300/300",
-      excerpt: "A gentle, hydrating cleanser that doesn't strip your skin barrier...",
-      pros: ["Gentle", "Hydrating", "Good for all skin types"],
-      cons: ["Doesn't remove heavy makeup well"],
+      price: "Rp.43.000,00",
+      image: "/id3.png",
+      excerpt: "A gentle foaming cleanser that effectively removes dirt and oil without stripping the skin's natural moisture...",
+      pros: ["Gentle on skin", "Fragrance-free", "Doesn't dry out skin", "Suitable for sensitive skin"],
+      cons: ["Less effective at removing heavy makeup"],
       featured: false,
       trending: false
     },
     {
       id: 4,
-      title: "Beauty Blender Original Makeup Sponge",
+      title: "Aeris Beaute Cloud Conceal Puff",
       category: "tools",
       rating: 4.3,
-      price: "$20.00",
-      image: "/api/placeholder/300/300",
-      excerpt: "The iconic makeup sponge that changed the beauty game forever...",
-      pros: ["Great for blending", "Versatile", "Damp application"],
-      cons: ["Expensive for a sponge", "Needs frequent replacement"],
+      price: "Rp.50.000,00",
+      image: "/id4.png",
+      excerpt: "A mini precision puff designed to seamlessly blend concealer into hard-to-reach areas with a smooth, flawless finish...",
+      pros: ["Perfect for under eyes and corners", "Soft and bouncy texture", "Great control for detail areas", "Doesn’t absorb too much product"],
+      cons: ["Small size may not be ideal for full-face use", "Needs gentle handling to maintain shape"],
       featured: false,
       trending: false
     },
     {
       id: 5,
-      title: "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
+      title: "OMG Matte Lipcream",
       category: "makeup",
       rating: 4.7,
-      price: "$21.00",
-      image: "/api/placeholder/300/300",
-      excerpt: "A universally flattering gloss that adds the perfect amount of shine...",
-      pros: ["Universal shade", "Non-sticky", "Beautiful packaging"],
-      cons: ["Pricey", "Not long-lasting"],
+      price: "Rp.22.000,00",
+      image: "/id5.png",
+      excerpt: "An affordable matte lip cream with vibrant pigmentation and a lightweight feel for everyday wear...",
+      pros: ["Highly pigmented", "Lightweight texture", "Wide shade range", "Budget-friendly"],
+      cons: ["Can be drying over time", "Not long-lasting after eating or drinking"],
       featured: true,
       trending: true
     },
     {
       id: 6,
-      title: "Paula's Choice 2% BHA Liquid Exfoliant",
+      title: "Elformula Peeling Serum",
       category: "skincare",
       rating: 4.6,
-      price: "$32.00",
-      image: "/api/placeholder/300/300",
-      excerpt: "A gentle yet effective chemical exfoliant for clearer, smoother skin...",
-      pros: ["Effective for blackheads", "Gentle formula", "Proven ingredients"],
-      cons: ["Expensive", "Takes time to see results"],
+      price: "Rp.125.000,00",
+      image: "/id6.png",
+      excerpt: "An effective exfoliating serum that promotes smoother, brighter skin by gently removing dead skin cells...",
+      pros: ["Visible brightening effect", "Smooths skin texture", "Gentle exfoliation", "Suitable for beginners"],
+      cons: ["May cause slight tingling on sensitive skin", "Requires consistent sunscreen use"],
       featured: false,
       trending: true
     }
@@ -105,21 +104,17 @@ const Review = () => {
     return matchesSearch && matchesCategory;
   });
 
-  const renderStars = (rating: number) => {
-    return (
-      <div className="flex items-center space-x-1">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
-            className={`h-4 w-4 ${
-              star <= rating ? "fill-primary text-primary" : "text-muted-foreground"
-            }`}
-          />
-        ))}
-        <span className="text-sm text-muted-foreground ml-2">{rating}</span>
-      </div>
-    );
-  };
+  const renderStars = (rating: number) => (
+    <div className="flex items-center space-x-1">
+      {[1, 2, 3, 4, 5].map((star) => (
+        <Star
+          key={star}
+          className={`h-4 w-4 ${star <= rating ? "fill-primary text-primary" : "text-muted-foreground"}`}
+        />
+      ))}
+      <span className="text-sm text-muted-foreground ml-2">{rating}</span>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-background pt-20">
@@ -133,8 +128,7 @@ const Review = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Real experiences with skincare and makeup products. No sponsorships, just honest opinions to help you make informed choices.
             </p>
-            
-            {/* Search and Filter */}
+
             <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -155,7 +149,6 @@ const Review = () => {
         </div>
       </section>
 
-      {/* Categories */}
       <section className="py-8 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 justify-center">
@@ -173,7 +166,6 @@ const Review = () => {
         </div>
       </section>
 
-      {/* Featured Reviews */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8">
@@ -183,14 +175,14 @@ const Review = () => {
               Editor's Choice
             </Badge>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {filteredReviews.filter(review => review.featured).map((review) => (
               <Card key={review.id} className="overflow-hidden border-2 border-primary/20 bg-gradient-to-br from-card via-card to-primary/5">
                 <div className="relative">
                   <img 
-                    src={reviewPhoto}
-                    alt="Beauty product review"
+                    src={review.image}
+                    alt={review.title}
                     className="h-48 w-full object-cover"
                   />
                   {review.trending && (
@@ -238,18 +230,17 @@ const Review = () => {
         </div>
       </section>
 
-      {/* All Reviews */}
       <section className="py-12 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-foreground mb-8">All Reviews</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredReviews.map((review) => (
               <Card key={review.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative">
                   <img 
-                    src={reviewPhoto}
-                    alt="Beauty product review"
+                    src={review.image}
+                    alt={review.title}
                     className="h-40 w-full object-cover"
                   />
                   {review.trending && (
@@ -276,28 +267,6 @@ const Review = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary/10 via-coral/10 to-accent/10">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-6">
-            Never Miss a Review
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Get notified when I post new reviews and beauty discoveries.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 h-12 rounded-xl"
-            />
-            <Button className="h-12 px-8 bg-primary hover:bg-primary/90 rounded-xl">
-              Subscribe
-            </Button>
           </div>
         </div>
       </section>
