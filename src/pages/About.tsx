@@ -1,4 +1,5 @@
 import { Heart, Award, Users, Clock } from "lucide-react";
+import PhotoUpload from "@/components/PhotoUpload";
 
 const About = () => {
   return (
@@ -10,14 +11,11 @@ const About = () => {
             {/* Personal Photo */}
             <div className="relative">
               <div className="relative z-10 bg-card rounded-3xl p-8 shadow-2xl border border-border">
-                <div className="w-full h-96 bg-gradient-to-br from-primary/20 to-coral/20 rounded-2xl flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                      <Heart className="h-16 w-16 text-primary" />
-                    </div>
-                    <p className="text-muted-foreground">Add your beautiful photo here!</p>
-                  </div>
-                </div>
+                <PhotoUpload 
+                  className="w-full h-96"
+                  placeholder="Add your beautiful photo here!"
+                  defaultIcon={<Heart className="h-16 w-16 text-primary" />}
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-coral/20 to-accent/20 rounded-full blur-3xl"></div>
             </div>

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, User, MessageCircle, BookOpen, Lightbulb, Heart, Sparkles } from "lucide-react";
+import { Clock, User, MessageCircle, BookOpen, Lightbulb, Heart, Sparkles, Camera } from "lucide-react";
+import PhotoUpload from "@/components/PhotoUpload";
 
 const Tips = () => {
   const tips = [
@@ -91,9 +92,11 @@ const Tips = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tips.map((tip) => (
               <Card key={tip.id} className={`overflow-hidden hover:shadow-xl transition-shadow ${tip.featured ? 'border-2 border-primary/20 bg-gradient-to-br from-card via-card to-primary/5' : ''}`}>
-                <div className="h-40 bg-gradient-to-br from-primary/20 to-coral/20 flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Article Image</span>
-                </div>
+                <PhotoUpload 
+                  className="h-40"
+                  placeholder="Add article image"
+                  defaultIcon={<Camera className="h-6 w-6 text-primary" />}
+                />
                 <CardHeader className="pb-2">
                   <div className="flex items-start justify-between mb-2">
                     {tip.featured && (

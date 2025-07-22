@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, Search, Filter, Heart, TrendingUp, Award } from "lucide-react";
+import { Star, Search, Filter, Heart, TrendingUp, Award, Camera } from "lucide-react";
+import PhotoUpload from "@/components/PhotoUpload";
 
 const Review = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -187,9 +188,11 @@ const Review = () => {
             {filteredReviews.filter(review => review.featured).map((review) => (
               <Card key={review.id} className="overflow-hidden border-2 border-primary/20 bg-gradient-to-br from-card via-card to-primary/5">
                 <div className="relative">
-                  <div className="h-48 bg-gradient-to-br from-primary/20 to-coral/20 flex items-center justify-center">
-                    <span className="text-muted-foreground">Product Image</span>
-                  </div>
+                  <PhotoUpload 
+                    className="h-48"
+                    placeholder="Add product image"
+                    defaultIcon={<Camera className="h-8 w-8 text-primary" />}
+                  />
                   {review.trending && (
                     <Badge className="absolute top-2 right-2 bg-coral text-coral-foreground">
                       <TrendingUp className="h-3 w-3 mr-1" />
@@ -244,9 +247,11 @@ const Review = () => {
             {filteredReviews.map((review) => (
               <Card key={review.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative">
-                  <div className="h-40 bg-gradient-to-br from-secondary/20 to-accent/20 flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Product Image</span>
-                  </div>
+                  <PhotoUpload 
+                    className="h-40"
+                    placeholder="Add product image"
+                    defaultIcon={<Camera className="h-6 w-6 text-primary" />}
+                  />
                   {review.trending && (
                     <Badge className="absolute top-2 right-2 bg-coral text-coral-foreground text-xs">
                       <TrendingUp className="h-3 w-3 mr-1" />
