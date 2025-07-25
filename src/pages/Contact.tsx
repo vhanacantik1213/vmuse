@@ -39,10 +39,10 @@ const Contact = () => {
             Get in Touch
           </h1>
           <p className="text-xl text-muted-foreground mb-4">
-            Have a question, suggestion, or collaboration idea?
+          Whether it’s feedback, questions, or a brilliant idea. I’m all ears!
           </p>
           <p className="text-lg text-muted-foreground">
-            I'd love to hear from you!
+          Drop me a message and let’s make beauty talk!
           </p>
         </div>
       </section>
@@ -54,9 +54,9 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-card rounded-3xl p-8 shadow-2xl border border-border">
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-foreground mb-2">Send a Message</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-2">Leave Me a Note</h2>
                 <p className="text-muted-foreground">
-                  Fill out the form below and I'll respond as soon as possible.
+                Short and personal, like sending a letter to a friend.
                 </p>
               </div>
 
@@ -122,10 +122,9 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-6">Let's Connect</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-6">Join the Conversation</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Whether you have questions about a product, want to suggest something for me to review, 
-                  or just want to chat about beauty, I'm always excited to connect with fellow beauty lovers!
+                If you have a beauty question, product recommendation, or just want to connect, I’m always excited to hear from fellow beauty lovers.
                 </p>
               </div>
 
@@ -172,19 +171,19 @@ const Contact = () => {
 
               {/* FAQ */}
               <div className="bg-muted/30 rounded-2xl p-6">
-                <h3 className="font-semibold text-foreground mb-4">Quick Answers</h3>
+                <h3 className="font-semibold text-foreground mb-4">Frequently Asked Topics</h3>
                 <div className="space-y-3 text-sm">
                   <div>
                     <p className="font-medium text-foreground">Product review requests:</p>
-                    <p className="text-muted-foreground">I'd love to try your products! Please include details about ingredients and your brand story.</p>
+                    <p className="text-muted-foreground">Excited to discover new favorites! Feel free to share your product details, key ingredients, and the heart behind your brand — I love knowing the story behind the beauty.</p>
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Collaboration inquiries:</p>
-                    <p className="text-muted-foreground">I work with brands that align with my values of transparency and quality.</p>
+                    <p className="text-muted-foreground">I'm open to working with brands that value honesty, quality, and empower people through beauty. Let’s create something meaningful together.</p>
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Personal skincare advice:</p>
-                    <p className="text-muted-foreground">While I can't provide medical advice, I'm happy to share general skincare tips!</p>
+                    <p className="text-muted-foreground">While I’m not a dermatologist, I’m happy to offer general skincare suggestions based on my experiences and what’s worked for me!</p>
                   </div>
                 </div>
               </div>

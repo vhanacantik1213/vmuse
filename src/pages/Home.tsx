@@ -35,13 +35,18 @@ const Home = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-coral hover:bg-coral/90 text-coral-foreground">
-                  Start Exploring
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
-                  Latest Reviews
-                </Button>
+                <a 
+              href="/about" 
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-primary/10 transition-colors"
+            >
+              Start Exploring
+            </a>
+                <a 
+              href="/review" 
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-secondary/10 transition-colors"
+            >
+              Latest Reviews
+            </a>
               </div>
             </div>
 
@@ -68,10 +73,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              What Makes Us Special
+            Why vmuse Stands Out
             </h2>
             <p className="text-xl text-muted-foreground">
-              Honest reviews, real results, genuine recommendations
+            Where truth meets beauty, honest insights, skin-first care, and what’s worth your attention.
             </p>
           </div>
 
@@ -80,9 +85,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto">
                 <Star className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Honest Reviews</h3>
+              <h3 className="text-xl font-semibold text-foreground">Authentic Experiences</h3>
               <p className="text-muted-foreground">
-                Real experiences with skincare and makeup products. No sponsored content, just truth.
+              No fluff, no filters. Just real stories from real users to guide your beauty journey.
               </p>
             </div>
 
@@ -90,9 +95,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-coral/10 rounded-2xl flex items-center justify-center mx-auto">
                 <Heart className="h-8 w-8 text-coral" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Skin-First Approach</h3>
+              <h3 className="text-xl font-semibold text-foreground">Skin Comes First</h3>
               <p className="text-muted-foreground">
-                We believe healthy skin is beautiful skin. Every recommendation prioritizes skin health.
+              Because glowing skin starts with health, we only recommend what’s kind to your skin.
               </p>
             </div>
 
@@ -100,9 +105,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto">
                 <TrendingUp className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Trending Insights</h3>
+              <h3 className="text-xl font-semibold text-foreground">Smart Beauty Trends</h3>
               <p className="text-muted-foreground">
-                Stay ahead with the latest beauty trends and ingredients that actually work.
+              We decode trending products and viral hacks, so you only follow what truly works.
               </p>
             </div>
           </div>
@@ -113,15 +118,18 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-r from-primary/10 via-coral/10 to-accent/10">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Ready to Transform Your Beauty Routine?
+          Upgrade Your Skincare with Confidence
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Join thousands of beauty lovers who trust our reviews for their skincare journey.
+          Join a growing community that values truth, care, and results in every beauty pick.
+
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            Explore Reviews
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <a 
+              href="/review" 
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-primary/10 transition-colors"
+            >
+              Explore Reviews 
+            </a>
         </div>
       </section>
     </div>

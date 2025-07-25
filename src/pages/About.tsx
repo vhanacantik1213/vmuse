@@ -33,11 +33,11 @@ const About = () => {
               </div>
               
               <div className="space-y-4">
-                <p className="text-foreground leading-relaxed">
+                <p className="text-xl text-muted-foreground">
                 That’s where vmuse comes in.
                 Here, I share real reviews, personal routines, and helpful beauty tips based on experience, not just hype. Whether you're struggling with oily skin, searching for the perfect lipstick, or simply curious about what works, I’m here to be your guide and your beauty muse.
                 </p>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-xl text-muted-foreground">
                 So, welcome! I hope this blog feels like your cozy space to learn, explore, and celebrate your glow. 
                 Let’s glow together!
                 </p>
@@ -71,13 +71,13 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/contact" 
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-primary/10 transition-colors"
             >
               Get in Touch
             </a>
             <a 
               href="/review" 
-              className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-primary/10 transition-colors"
             >
               Read My Reviews
             </a>
