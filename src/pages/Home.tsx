@@ -36,7 +36,7 @@ const Home = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-              href="/about" 
+              href="https://vmuse.vercel.app/about" 
               className="inline-flex items-center justify-center px-6 py-3 border border-primary bg-white text-primary rounded-lg hover:bg-primary/10 transition-colors"
             >
               Start Exploring
